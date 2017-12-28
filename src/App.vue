@@ -16,6 +16,6 @@
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
    text-align: center;
-	 margin: 10px;
+	 margin: 0px;
 	}
 </style>
