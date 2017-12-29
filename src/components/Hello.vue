@@ -68,6 +68,7 @@
        inkscape:connector-curvature="0" />
   </g>
 </svg>
+
 </div>
 <div class="container">
 <div class="navbar">
@@ -179,8 +180,23 @@ import card from './card'
           starsign: "",
           love: 1
         }
-      ]
+      ],
+      pos: this.scrollPos
     }
+  },
+  methods: {
+    handleScroll () {
+          console.log(this.scrollPos)
+    }
+  },
+  computed: {
+    scrollPos () {
+      const pos = 5 // (document.body.scrollTop)
+      return pos
+    }
+  },
+  created () {
+    window.addEventListener('scroll', this.handleScroll)
   }
 }
 
@@ -215,13 +231,13 @@ import card from './card'
   z-index: 1000;
   top: 0px;
   margin: 0px 10px;
-
+  display: grid;
 }
 
 .toiyp_logo-sml {
   width: 35px;
   position: absolute;
-  top: -103px;
+  top: -106px;
   left: 25px;
   opacity: .7;
 }
@@ -306,7 +322,7 @@ import card from './card'
   border-radius: 5px;
   box-shadow: 0px 4px 20px rgba(0,0,0, .2);
   transition: all .2s;
-  border: 1px solid peachpuff;
+  // border: 1px solid peachpuff;
 
   margin: 5px;
   text-align: left;

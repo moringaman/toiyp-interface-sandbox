@@ -52,7 +52,7 @@ export default {
   border-radius: 5px;
   box-shadow: 0px 4px 20px rgba(0,0,0, .2);
   transition: all .2s;
-  border: 1px solid peachpuff;
+  // border: 1px solid peachpuff;
 
   margin: 5px;
   text-align: left;
